@@ -5,8 +5,8 @@ import config from '../../appConfig'
 import '../styles/components/LoginForm.scss'
 
 const LoginForm = () => {
-    const [login, setLogin] = useState('')
-    const [password, setPassword] = useState('')
+    const [login, setLogin] = useState('test')
+    const [password, setPassword] = useState('1234')
     const [message, setMessage] = useState('')
     const [isLoading, setLoading] = useState(false)
 
@@ -16,8 +16,12 @@ const LoginForm = () => {
         e.preventDefault()
 
         axios
-            .get(config.apiUrl)
+            .post(`${config.apiUrl}/users/login`, {
+                login,
+                password,
+            })
             .then((res) => {
+                console.log(res.data)
                 setMessage(res.data.message)
             })
             .catch((e) => {

@@ -1,5 +1,5 @@
 const config = {
-    apiUrl: 'http://localhost/test',
+    apiUrl: 'http://localhost/api',
 }
 
 export { config as default }
