@@ -3,7 +3,10 @@
 .login-form {
     display: grid;
     justify-items: center;
+    align-content: flex-start;
     grid-gap: 1vw;
+    min-height: 16vw;
+    padding-top: 4vw;
     input,
     button {
         font-size: 1.2em;
