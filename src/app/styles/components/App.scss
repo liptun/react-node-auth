@@ -1,0 +1,16 @@
+@import '../variables.scss';
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-bgray;
+    color: white;
+    font-family: sans-serif;
+    &__content {
+        display: grid;
+        justify-items: center;
+    }
+}

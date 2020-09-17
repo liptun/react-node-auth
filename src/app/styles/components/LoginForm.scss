@@ -1,0 +1,23 @@
+@import '../variables.scss';
+
+.login-form {
+    display: grid;
+    justify-items: center;
+    grid-gap: 1vw;
+    input,
+    button {
+        font-size: 1.2em;
+        border: 0;
+        padding: 0.4vw 1vw;
+        border-radius: 2em;
+        &:focus {
+            box-shadow: 0 0 0 2px $color-dgray, 0 0 0 3px white;
+            outline: 0;
+        }
+    }
+    button {
+        background-color: $color-primary;
+        color: white;
+        cursor: pointer;
+    }
+}
